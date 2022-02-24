@@ -1,0 +1,300 @@
+.how-landpage{
+    /* height: 90vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+}
+.welcome-text{
+    width: 50%;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.welcome-text h1{
+    width: 100%;
+    color:black;
+    /* background-color: red; */
+    height: 50%;
+    text-align: center;
+    font-size: 3rem;
+}
+.guide-section{
+    /* height: 100vh; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    flex-direction: column;
+}
+.guide-card{
+    height: 300px;
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+
+.guide-img{
+    width: 30%;
+    height: 70%;
+    object-fit: contain;
+}
+.guide-text{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column ;
+    height: 100%;
+    
+}
+.guide-text h1{
+    font-family: poppins;
+    text-transform: capitalize;
+    font-size: 2rem;
+    width: 100%;
+}
+.guide-text p{
+    font-family: roboto;
+    line-height: 25px;
+}
+.good-to-go-img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* From cssbuttons.io by @alexmaracinaru */
+.cta {
+    border: none;
+    background: none;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+    box-shadow: 0px 0px 15px rgb(156, 156, 156);
+    cursor: pointer;
+   }
+   
+   .cta span {
+    padding-bottom: 10px;
+    letter-spacing: 4px;
+    font-size: 12px;
+    padding-right: 15px;
+    text-transform: uppercase;
+   }
+   
+   .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active svg {
+    transform: scale(0.9);
+   }
+   
+   .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+   }
+   
+   .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   }
+   
+   .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   }
+   
+   .start-now-btn{
+       width: 100%;
+       height: 100px;
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       background-color: aliceblue;
+       padding-left: 50px;
+   }
+.img-cont{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-family: poppins;
+    text-transform: capitalize;
+}
+@media (min-width : 750px) and (max-width: 900px){
+    .how-landpage{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .landpage-img{
+        height: auto;
+    }
+    .welcome-text{
+        width: 80%;
+        font-size: 2rem;
+        margin: auto;
+    }
+}
+@media (min-width : 0px) and (max-width: 749px){
+    .menu-container{
+        width: 60px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+     
+    }
+    .menu-line{
+        height: 4px;
+        width: 35px;
+        border-radius: 5px;
+        background-color: white;
+        margin: 3px;
+    }
+    .navbar{
+        width: 0%;
+        overflow-x: hidden;
+    }
+    .search-container{
+        display: none;
+    }
+    .menu-list{
+        width: 0%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background:rgba(0, 0, 0, 0.897);
+        height: 100%;
+        z-index: 100;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+        z-index: 200;
+    }
+    
+    .list-items{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 60%;
+       
+    }
+    .menu-list li{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid rgba(17, 16, 16, 0.794);
+        padding-bottom: 10px;
+    }
+   
+    .menu-list a{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: ubuntu;
+    }
+    .arrow{
+        width: 5%;
+        margin-left: auto;
+        max-height: 80%;
+        object-fit: contain;
+    }
+    .menu-list-login{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 40%;
+        overflow-x: hidden;
+        background-color: rgba(0, 0, 0, 0.897);
+        padding: 10px;
+    }
+    .close-btn{
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .navbar{
+        display: none;
+    }
+
+    .how-landpage{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .login-container{
+        width: 70%;
+    }
+    .landpage-img{
+        height: auto;
+        width: 90%;
+    }
+    .welcome-text{
+        width: 80%;
+        background-color: white;
+        margin: auto;
+    }
+    .welcome-text h1{
+        font-size: 2rem;
+    }
+    .green-text{
+        font-size:2rem ;
+    }
+    .guide-section h1{
+        font-size: 1.7rem;
+    }
+    .guide-section{
+        width: 100%;
+    }
+    .img-cont h1{
+        font-size: 2rem;
+    }
+}

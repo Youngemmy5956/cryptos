@@ -1,0 +1,412 @@
+.about-landpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.about-landpage-img{
+    height:90% ;
+    width: 50%;
+    object-fit: cover;
+}
+.about-section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-section-text-container{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+.about-section h1{
+    font-family: poppins;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.about-section p{
+    width: 55%;
+    font-family: roboto;
+    line-height: 25px;
+    font-size: 1.2rem;
+    opacity: .8;
+    text-align: center;
+    margin-top: 20px;
+    margin: auto;
+}
+.our-team-section{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.our-team-text,.our-team-img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+.our-team-text h1{
+    font-size: 2rem;
+    font-family: poppins;
+    text-transform: capitalize;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.our-team-text p{
+    width: 80%;
+    font-family: roboto;
+    line-height: 25px;
+}
+.our-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.our-vision-section{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+    margin-top: 50px;
+}
+.our-vision-text-container{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 40%;
+    /* background-color: green; */
+    align-self: center;
+}
+.our-vision-text-container h1,p{
+    width: 100%;
+    margin-bottom:20px ;
+}
+.our-vision-text-container h1{
+    font-family: poppins;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.line{
+    height: 5px;
+    width: 100px;
+    background-color: rgb(212, 212, 0);
+    position: absolute;
+}
+.our-vision-text-container p{
+    font-family: roboto;
+    line-height: 25px;
+}
+.vision-img{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+.team-card-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.team-card{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    height: auto;
+}
+.profile-img{
+    height: 400px;
+    width: 300px;
+    object-fit: contain;
+}
+.team-card-text{
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.team-card-text h1{
+    font-family: poppins;
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+.team-card-text p{
+    font-family: roboto;
+    line-height: 25px;
+    width: 80%;
+    margin-right: auto;
+}
+@media (min-width : 750px) and (max-width: 900px){
+    
+    .about-landpage-img{
+        width:100%;
+    }
+    .about-section h1{
+        font-size: 2rem;
+    }
+    .about-section p{
+        width: 80%;
+    }
+    .green-text{
+        font-size: 2rem;
+    }
+    .our-vision-section{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    .our-vision-text-container,.our-team-text{
+        width: 70%;
+    }
+    .our-team-text h1{
+        width: 100%;
+    }
+    .our-team-text p{
+        width: 100%;
+    }
+    .our-team-section{
+        height: auto;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .team-card-container{
+        height: auto;
+        margin-top: 30px;
+    }
+    .team-card{
+        flex-direction: column;
+        height: auto;
+    }
+    .team-card-text{
+        width: 80%;
+    }
+    .team-card-text h1,p{
+        align-self: flex-start;
+        width: 100%;
+    }
+    .profile-img{
+        height: auto;
+        width: 70%;
+    }
+    .foot1{
+        width: 80%;
+        margin-top: 20px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+@media (min-width : 0px) and (max-width: 749px){
+    .logo-container{
+        height: 100%;
+        /* background-color: red; */
+        padding: 0%;
+        width: auto;
+    }
+    .logo{
+        width: 100%;
+        object-fit: cover;
+        height: 300%;
+    }
+    .menu-container{
+        width: 60px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+     
+    }
+    .menu-line{
+        height: 4px;
+        width: 35px;
+        border-radius: 5px;
+        background-color: white;
+        margin: 3px;
+    }
+    .navbar{
+        width: 0%;
+        overflow-x: hidden;
+    }
+    .search-container{
+        display: none;
+    }
+    .menu-list{
+        width: 0%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background:rgba(0, 0, 0, 0.897);
+        height: 100%;
+        z-index: 100;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+        z-index: 200;
+    }
+    
+    .list-items{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 60%;
+       
+    }
+    .menu-list li{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid rgba(17, 16, 16, 0.794);
+        padding-bottom: 10px;
+    }
+   
+    .menu-list a{
+        display: flex;
+        /* background-color: red; */
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: ubuntu;
+    }
+    .arrow{
+        width: 5%;
+        margin-left: auto;
+        max-height: 80%;
+        object-fit: contain;
+    }
+    .menu-list-login{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 40%;
+        overflow-x: hidden;
+        background-color: rgba(0, 0, 0, 0.897);
+        padding: 10px;
+    }
+    .close-btn{
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .navbar{
+        display: none;
+    }
+    
+    .about-landpage-img{
+        width:100%;
+        object-fit: contain;
+    }
+    .about-section h1{
+        font-size: 2rem;
+        margin: auto;
+        width: 80%;
+    }
+    .about-section p{
+        width: 80%;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    .green-text{
+        font-size: 2rem;
+    }
+    .vision-img{
+        width: 90%;
+    }
+    .our-img{
+        width: 100%;
+    }
+    .our-team-img{
+        width: 90%;
+    }
+    .our-vision-section{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    .our-vision-text-container,.our-team-text{
+        width: 80%;
+    }
+    .our-team-text h1{
+        width: 100%;
+    }
+    .our-team-text p{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .our-team-section{
+        height: auto;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .team-card-container{
+        height: auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .team-card{
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+    }
+    .team-card-text{
+        width: 100%;
+    }
+    .team-card-text h1,p{
+        align-self: flex-start;
+        width: 100%;
+    }
+    .team-card-text p{
+        width:100;
+        font-size: 1.1rem;
+    }
+    .profile-img{
+        height: auto;
+        width: 95%;
+    }
+    .foot1{
+        width: 80%;
+        margin-top: 20px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
