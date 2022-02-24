@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
-    <link rel="stylesheet" href="../css files/general.css">
-    <link rel="stylesheet" href="../css files/about.css">
-    <link rel="icon" href="../images/coininvest.png">
+    <link rel="stylesheet" href="{{asset('data/css/general.css')}}">
+    <link rel="stylesheet" href="{{asset('data/css/about.css')}}">
+    <link rel="icon" href="{{asset('data/images/coininvest.png')}}">
 </head>
 <body>
     <!-- this is the header section that contains the logo and the navigation bars   -->
-    <header id="head"> 
+    <header id="head">
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="../images/coininvest22.png" alt="" class="logo">
+            <img src="{{asset('data/images/coininvest22.png')}}" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
@@ -23,19 +23,19 @@
             <ul class="navlist">
                 <li class="tab">
                     <!-- these are the navbar links to different pages -->
-                    <a href="../index.html" class="link">home</a>
+                    <a href="{{route("index")}}" class="link">home</a>
                 </li>
                 <li class="tab">
-                    <a href="./how-it-works.html" class="link">how it works</a>
+                    <a href="{{route("how_it_works")}}" class="link">how it works</a>
                 </li>
                 <li class="tab">
-                    <a href="./blog.html" class="link">blog</a>
+                    <a href="{{route("blog")}}" class="link">blog</a>
                 </li>
                 <li class="tab">
-                    <a href="./about.html" class="link">about</a>
+                    <a href="{{route("about")}}" class="link">about</a>
                 </li>
                 <li class="tab">
-                    <a href="./contact.html" class="link">contact</a>
+                    <a href="{{route("contact")}}" class="link">contact</a>
                 </li>
             </ul>
         </nav>
@@ -44,14 +44,14 @@
 
         <div class="menu-list" id="menu-items">
             <div class="menu-list-login">
-                 <img src="../images/1193.png" alt=""  id="close-sidebar" class="close-btn">
+                 <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
          <ul class="list-items">
-            <li><a href="../index.html">home <img src="../images/arrow-24-xxl.png" alt="" class="arrow"> </a ></li>
-             <li><a href="./contact.html">contact  <img src="../images/arrow-24-xxl.png" alt="" class="arrow"></a></li>            
-              <li><a href="./blog.html">blog  <img src="../images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-             <li><a href="./about.html">about <img src="../images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-             <li><a href="./how-it-works.html">how it works  <img src="../images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
+            <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
+             <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+              <li><a href="{{route("blog")}}">blog  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+             <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+             <li><a href="{{route("how_it_works")}}">how it works  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
          </ul>
         </div>
         <!-- this is the code for the hamburger menu in the mobile view -->
@@ -62,28 +62,28 @@
             <div class="menu-line"></div>
         </div>
     </header>
-<!-- end of the header section --> 
+<!-- end of the header section -->
 <section class="about-landpage">
-    <img src="../images/4380.jpg" alt="" class="about-landpage-img">
+    <img src="{{asset('data/images/4380.jpg')}}" alt="" class="about-landpage-img">
 </section>
 <section class="about-section">
     <h1>about <span class="green-text">coinvestcryptos</span></h1>
     <p> coininvestcryptos is an online crypto trading platform, with fully secured, fast, reliable
-        and licenced trade record for past three decades. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, 
-        
+        and licenced trade record for past three decades. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+
     </p>
 </section>
 <section class="our-vision-section">
-    <img src="../images/2164477.jpg" alt="" class="vision-img">
+    <img src="{{asset('data/images/2164477.jpg')}}" alt="" class="vision-img">
     <div class="our-vision-text-container">
         <h1>our vision <br><span class="line"></span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Tenetur veniam ea nemo dolore. Error harum voluptates minima. Ad, natus ab.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolorum
              nostrum architecto illum a earum?
         </p>
     </div>
-        
+
 </section>
 <section class="our-team-section">
     <div class="our-team-text">
@@ -92,26 +92,26 @@
             kudos! to them
         </p>
     </div>
-    
+
     <div class="our-team-img">
-        <img src="../images/4776016.jpg" alt="" class="our-img">
+        <img src="{{asset('data/images/4776016.jpg')}}" alt="" class="our-img">
     </div>
 </section>
 <div class="team-card-container">
     <div class="team-card">
-        <img src="../images/1000_F_261258321_GP0Q6btipSzYzOQYQCvM8xzbU78jebdk.jpg" alt="" class="profile-img">
+        <img src="{{asset('data/images/1000_F_261258321_GP0Q6btipSzYzOQYQCvM8xzbU78jebdk.jpg')}}" alt="" class="profile-img">
         <div class="team-card-text">
             <h1>ceo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, inventore 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, inventore
                 laudantium molestias ut quis aspernatur? Id voluptatum repellendus fugiat culpa!
             </p>
         </div>
     </div>
     <div class="team-card">
-        <img src="../images/1000_F_261258321_GP0Q6btipSzYzOQYQCvM8xzbU78jebdk.jpg" alt="" class="profile-img">
+        <img src="{{asset('data/images/1000_F_261258321_GP0Q6btipSzYzOQYQCvM8xzbU78jebdk.jpg')}}" alt="" class="profile-img">
         <div class="team-card-text">
             <h1>ceo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, inventore 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, inventore
                 laudantium molestias ut quis aspernatur? Id voluptatum repellendus fugiat culpa!
             </p>
         </div>
@@ -124,22 +124,22 @@
         <h2>useful links</h2>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur neque excepturi debitis hic quasi labore amet 
+            Consequuntur neque excepturi debitis hic quasi labore amet
         </p>
         <div class="social-media-handle-for-blog-footer">
-            <img src="../images/facebook.png" alt="" class="social-icon">
-            <img src="../images/insta.png" alt="" class="social-icon">
-            <img src="../images/whatsapp.png" alt="" class="social-icon">
-            <img src="../images/git.png" alt="" class="social-icon">
-            <img src="../images/mail.png" alt="" class="social-icon">
+            <img src="{{asset('data/images/facebook.png')}}" alt="" class="social-icon">
+            <img src="{{asset('data/images/insta.png')}}" alt="" class="social-icon">
+            <img src="{{asset('data/images/whatsapp.png')}}" alt="" class="social-icon">
+            <img src="{{asset('data/images/git.png')}}" alt="" class="social-icon">
+            <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon">
         </div>
     </div>
     <!-- second division  -->
     <div class="foot1">
         <h2>contact me</h2>
-        <li ><img src="../images/paper-plane.png" alt=""class="my-img"> <a href="#">@emmanula/twitter.com</a></li>
-        <li ><img src="../images/paper-plane.png" alt=""class="my-img"> <a href="#">www.google.com</a></li>
-        <li ><img src="../images/paper-plane.png" alt=""class="my-img"> <a href="#">+234 7042244539</a></li>
+        <li ><img src="{{asset('data/images/paper-plane.png')}}" alt=""class="my-img"> <a href="#">@emmanula/twitter.com</a></li>
+        <li ><img src="{{asset('data/images/paper-plane.png')}}" alt=""class="my-img"> <a href="#">www.google.com</a></li>
+        <li ><img src="{{asset('data/images/paper-plane.png')}}" alt=""class="my-img"> <a href="#">+234 7042244539</a></li>
     </div>
     <!-- 3rd division  -->
 
@@ -152,6 +152,6 @@
         <input type="email" name="" id="" placeholder="enter your email" class="input">
     </div>
 </footer>
-<script src="../js files/main.js"></script>
+<script src="{{asset('data/js/main.js')}}"></script>
 </body>
 </html>

@@ -47,7 +47,7 @@
 
         <div class="menu-list" id="menu-items">
             <div class="menu-list-login">
-                 <img src="{{assset(data/images/1193.png)}}" alt=""  id="close-sidebar" class="close-btn">
+                 <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
          <ul class="list-items">
             <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
@@ -425,7 +425,7 @@
     <!-- end of blog section  -->
     <!-- this is the register section  -->
     <section class="register-section">
-        <img  src="{{asset('data/images/20945517.jpg"')}} alt="" class="svg-img">
+        <img  src="{{asset('data/images/20945517.jpg"')}}" alt="" class="svg-img">
         <div class="register-text">
             <p>register today to receive updates and be part of us</p>
         </div>
