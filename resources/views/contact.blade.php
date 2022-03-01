@@ -22,7 +22,7 @@
             <ul class="navlist">
                 <li class="tab">
                     <!-- these are the navbar links to different pages -->
-                    <a href="{{route("index")}}" class="link">home</a>
+                    <a href="{{route("home")}}" class="link">home</a>
                 </li>
                 <li class="tab">
                     <a href="{{route("how_it_works")}}" class="link">how it works</a>
@@ -46,7 +46,7 @@
                  <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
          <ul class="list-items">
-            <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
+            <li><a href="{{route("home")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
              <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
              <li><a href="{{route("blog")}}">blog  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
              <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>

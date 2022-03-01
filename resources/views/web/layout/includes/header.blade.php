@@ -1,7 +1,7 @@
 <header class="">
     <!-- this is the logo container -->
     <div class="logo-container">
-        <img src="{{asset('data/images/coininvest22.png')}}" alt="" class="logo">
+    <a href="{{ url('/') }}"><img src="{{asset('data/images/coininvest22.png')}}" alt="" class="logo"></a>
     </div>
 
     <!-- this is the navigation bar  for the destop view -->
@@ -9,7 +9,7 @@
         <ul class="navlist">
             <li class="tab">
                 <!-- these are the navbar links to different pages -->
-                <a href="{{route("index")}}" class="link">home</a>
+                <a href="{{route("home")}}" class="link">home</a>
             </li>
             <li class="tab">
                 <a href="#service" class="link">services</a>
@@ -37,7 +37,7 @@
             <img src="{{asset('data/images/1193.png')}}" alt="" id="close-sidebar" class="close-btn">
         </div>
         <ul class="list-items">
-            <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a></li>
+            <li><a href="{{route("home")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a></li>
             <li><a href="{{route("contact")}}">contact <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
             <li><a href="{{route("blog")}}">blog <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
             <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>

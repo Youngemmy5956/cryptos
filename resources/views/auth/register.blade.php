@@ -4,12 +4,12 @@
 <div class="container-fluid mt-5 mb-4">
     @include("web.layout.notifications.flash_messages")
     <div class="row">
-        <div class="col-sm-6">
-            <img src="{{asset('data/images/login-img.jpg')}}" alt="" class="login-img">
+        <div class="col-sm-4">
+            <img src="{{asset('data/images/login-img.jpg')}}" alt="" class="img-fluid login-img">
         </div>
-        <div class="col-sm-6 mx-auto">
+        <div class="col-sm-8 mt-2 ml-5 align-items-center">
 
-            <div class="card mt-4 mr-5">
+            <div class="card ">
                 <div class="card-body">
                     <h4 class="mb-3 header-title text-center">Register</h4>
 

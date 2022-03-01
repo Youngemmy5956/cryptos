@@ -14,7 +14,7 @@ class HomeController extends Controller
         return view("how_it_works");
     }
 
-    public function index(){
+    public function home(){
         return view("web.home.index");
     }
 
