@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d5c3912e0b0eaf7de4cf89c2a741739",
+    "content-hash": "cbc0c18bec4447af6492a2fe7459ea0b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -550,6 +550,62 @@
                 "source": "https://github.com/fideloper/TrustedProxy/tree/4.4.1"
             },
             "time": "2020-10-22T13:48:01+00:00"
+        },
+        {
+            "name": "flutterwavedev/flutterwave-v3",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Flutterwave/Flutterwave-PHP-v3.git",
+                "reference": "a0f9bb960617f784192f053c2b4b4683ee1ac01a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Flutterwave/Flutterwave-PHP-v3/zipball/a0f9bb960617f784192f053c2b4b4683ee1ac01a",
+                "reference": "a0f9bb960617f784192f053c2b4b4683ee1ac01a",
+                "shasum": ""
+            },
+            "require": {
+                "mashape/unirest-php": ">=3.0",
+                "monolog/monolog": ">=2.0",
+                "php": ">=5.4.0",
+                "vlucas/phpdotenv": ">=2.5"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=1.2",
+                "phpunit/phpunit": ">=6.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flutterwave\\": "library/Rave"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flutterwave Developers",
+                    "email": "developers@flutterwavego.com"
+                }
+            ],
+            "description": "A simple SDK for integrating to Flutterwave's Rave payment",
+            "homepage": "https://github.com/Flutterwave/Flutterwave-PHP-v3",
+            "keywords": [
+                "africa",
+                "flutterwave",
+                "payment",
+                "rave",
+                "transfers"
+            ],
+            "support": {
+                "issues": "https://github.com/Flutterwave/Flutterwave-PHP-v3/issues",
+                "source": "https://github.com/Flutterwave/Flutterwave-PHP-v3/tree/master"
+            },
+            "time": "2022-02-21T12:12:17+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -1711,6 +1767,57 @@
                 }
             ],
             "time": "2021-11-21T11:48:40+00:00"
+        },
+        {
+            "name": "mashape/unirest-php",
+            "version": "v3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mashape/unirest-php.git",
+                "reference": "842c0f242dfaaf85f16b72e217bf7f7c19ab12cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mashape/unirest-php/zipball/842c0f242dfaaf85f16b72e217bf7f7c19ab12cb",
+                "reference": "842c0f242dfaaf85f16b72e217bf7f7c19ab12cb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.1.*",
+                "phpunit/phpunit": "~4.4"
+            },
+            "suggest": {
+                "ext-json": "Allows using JSON Bodies for sending and parsing requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Unirest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Unirest PHP",
+            "homepage": "https://github.com/Mashape/unirest-php",
+            "keywords": [
+                "client",
+                "curl",
+                "http",
+                "https",
+                "rest"
+            ],
+            "support": {
+                "email": "opensource@mashape.com",
+                "issues": "https://github.com/Mashape/unirest-php/issues",
+                "source": "https://github.com/Mashape/unirest-php/tree/master"
+            },
+            "time": "2016-08-11T17:49:21+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2900,6 +3007,88 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "5.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "6c46b4e7dc5445ebb36a44b00ee08d0838f580b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/6c46b4e7dc5445ebb36a44b00ee08d0838f580b0",
+                "reference": "6c46b4e7dc5445ebb36a44b00ee08d0838f580b0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^7.0|^8.0|^9.0",
+                "illuminate/container": "^7.0|^8.0|^9.0",
+                "illuminate/contracts": "^7.0|^8.0|^9.0",
+                "illuminate/database": "^7.0|^8.0|^9.0",
+                "php": "^7.3|^8.0|^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^9.4",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "5.x-dev",
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 6.0 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-permission/issues",
+                "source": "https://github.com/spatie/laravel-permission/tree/5.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-03T17:57:16+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -7876,7 +8065,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "flutterwavedev/flutterwave-v3": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

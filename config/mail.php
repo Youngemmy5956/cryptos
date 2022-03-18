@@ -41,6 +41,7 @@ return [
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
+            'address' => env('MAIL_FROM_ADDRESS'),
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -70,6 +71,15 @@ return [
         'array' => [
             'transport' => 'array',
         ],
+
+        'failover' => [
+            'transport' => 'failover',
+            'mailers' => [
+                'smtp',
+                'log',
+            ],
+        ],
+
     ],
 
     /*
