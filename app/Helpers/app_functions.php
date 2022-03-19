@@ -35,6 +35,10 @@ function getRandomToken($length, $typeInt = false)
     return $token;
 }
 
+function avatar(User $user){
+    
+    return $user->pictureUrl();
+}
 
 /**Puts file in a public storage */
 function putFileInStorage($file, $path)

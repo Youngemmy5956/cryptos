@@ -14,12 +14,13 @@
 </div>
 <div class="row">
     <!-- end card -->
+    @include('notification.flash')
     <div class="col-xl-6">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title mb-4">Personal Information</h4>
                 <div class="text-center mb-3">
-                    <img src="{{ auth()->user()->pictureUrl() }}" class="rounded-circle" alt="my image">
+                    <img src="{{ auth()->user()->pictureUrl() }}" class="avatar-xl rounded-circle" alt="my image">
                 </div>
                 <div class="table-responsive">
                     <table class="table table-nowrap mb-0">
@@ -43,6 +44,30 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-4">Change Password</h4>
+                @include('notification.password')
+                <form action="{{route("user.myaccount.change_password")}}" method="POST">
+                    @csrf
+                    <div class="mb-3 col-12">
+                        <label for="password">Old Password</label>
+                        <input id="" type="password" class="form-control @error('current_password') is-invalid @enderror" name="current_password" value="" required autocomplete="current_password">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="password">New Pasword</label>
+                        <input id="new" type="password" class="form-control @error('new_password') is-invalid @enderror" name="new_password" value="" required autocomplete="current_password">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="password">Password Confirmation</label>
+                        <input id="confirm" type="password" class="form-control @error('confirm_password') is-invalid @enderror" name="confirm_password" value="" required autocomplete="confirm_password">
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

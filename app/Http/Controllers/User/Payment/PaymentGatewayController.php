@@ -32,8 +32,6 @@ class PaymentGatewayController extends Controller
                 ->with(NotificationConstants::ERROR_MSG, "Transaction cancelled!");
         }
 
-
-
         $response = $flutterwaveService->verify($request->transaction_id);
         $data = $response["data"];
         if ($response["status"] == "success") {

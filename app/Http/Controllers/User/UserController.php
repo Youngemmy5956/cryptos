@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
+use App\Services\Media\FileService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -15,64 +18,64 @@ class UserController extends Controller
     public function index()
     {
         //
-        return view('user.dashboard.myaccount.index');
+        $user = auth()->user();
+        return view('user.dashboard.myaccount.index', [
+            'user' => $user
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function validateData(Request $request)
+    {
+        return $request->validate([
+            "first_name" => "required|string",
+            "last_name" => "required|string",
+            "picture" => "nullable|image",
+            "password" => "nullable|string",
+            "email" => "required|email",
+            "phone" => "required|string",
+        ]);
+    }
+    public function update(Request $request)
     {
         //
+
+        $data = $this->validateData($request);
+
+        $user = auth()->user();
+        if (!empty($file = $data["picture"] ?? null)) {
+
+            $fileService = new FileService;
+            $picture = $fileService->setMoveFile(true)->saveFromFile($file, "user/profile_pics");
+            unset($data["picture"]);
+            $data["picture_id"] = $picture->id;
+        }
+        $user->update($data);
+        session()->flash("success_message", "Account updated successfully");
+        return back();
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function changePassword(Request $request)
     {
-        //
-    }
+        // dd(request()->all());
+        $request->validate([
+            'current_password' => 'required',
+            'new_password' => 'required|string|min:6',
+            'confirm_password' => 'required|same:new_password'
+        ]);
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+        $currentuser = auth()->user();
+        if (Hash::check($request->current_password, $currentuser->password)) {
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+            $currentuser->update([
+                'password' => bcrypt($request->new_password)
+            ]);
+            session()->flash("password_success", "Password changed successfuly");
+            return back();
+        } else {
+            session()->flash("password_error", "old password does not match");
+            return back();
+        }
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
     /**
      * Remove the specified resource from storage.
      *

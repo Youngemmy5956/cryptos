@@ -21,7 +21,7 @@ class FlutterwaveService
         $this->defaultCustomization = [
             "title" => env("APP_NAME"),
             "description" => "Pay for service",
-            "logo" => public_path("coininvest.png")
+            "logo" => asset("coininvest.png")
         ];
         $this->customization = $this->defaultCustomization;
         $this->curl_headers = [

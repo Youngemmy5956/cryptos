@@ -10,7 +10,11 @@
                 </ol>
             </div> -->
     </div>
+    <div class="col-sm-12 alert alert-success">
+        <p>Be sure to have sufficient funds in your wallet before proceeding to subscribe. <a href="{{route("user.wallets.index")}}">Click here to check wallet balance</a> </p>
+    </div>
 </div>
+@include('notification.flash')
 <div class="row mt-5">
     @foreach($plans as $plan)
     <div class="col-xl-4 col-md-6">
@@ -29,7 +33,9 @@
                     <h2><sup><small>NGN</small></sup> {{ $plan->price }}/ <span class="font-size-13">Per month</span></h2>
                 </div>
                 <div class="text-center">
-                <button type="submit" data-target="#makePaymentForm" class="btn btn-success btn-sm waves-effect waves-light mb-3">Subscribe Now</button>
+                    <form action="{{route("user.subscriptions.deductions" , $plan->id)}}" method="post">@csrf
+                        <button type="submit" onclick="if (confirm('NGN{{$plan->price}} will be deducted from your wallet, proceed?')){return true;}else{event.stopPropagation(); event.preventDefault();};" class="btn btn-success btn-sm waves-effect waves-light mb-3">SUBSCRIBE NOW <i class="simple-icon-arrow-right"></i></button>
+                    </form>
                     <div>
 
                         <button data-bs-toggle="modal" data-bs-target="#showDetail_{{$plan->id}}" class="btn btn-primary btn-sm waves-effect waves-light">View Plan Details</button>
@@ -51,4 +57,3 @@
 
 </div>
 @endsection
-

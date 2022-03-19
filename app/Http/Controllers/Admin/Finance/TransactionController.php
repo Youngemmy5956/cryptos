@@ -22,7 +22,7 @@ class TransactionController extends Controller
     {
         //
         // $builder = UserTransaction::test();
-        $transactions = UserTransaction::get();
+        $transactions = UserTransaction::paginate(30);
         return view('admin.dashboard.finance.transaction.index',[
             'transactions' =>$transactions,
             'statuses' => StatusConstants::TRANSACTION_OPTIONS
