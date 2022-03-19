@@ -1,18 +1,7 @@
 <div class="col-md-6">
     <div class="card overflow-hidden">
-        <div class="bg-primary bg-soft">
-
-        </div>
-        <div class="card-body pt-0">
-            <div>
-                <!-- <a href="index.html">
-                    <div class="avatar-md profile-user-wid mb-4">
-                        <span class="avatar-title rounded-circle bg-light">
-                            <img src="assets/images/logo.svg" alt="" class="rounded-circle" height="34">
-                        </span>
-                    </div>
-                </a> -->
-            </div>
+        <div class="card-body">
+            <h4 class="card-title mb-4">Update Account</h4>
             <div class="p-2">
                 <form class="" action="{{route('user.myaccount.update')}}" method="POST" enctype="multipart/form-data">
                     @csrf @method('PATCH')
