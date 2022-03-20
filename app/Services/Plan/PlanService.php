@@ -2,7 +2,7 @@
 
 namespace App\Services\Plan;
 
-use App\Exceptions\Plan\PlanException;
+use App\Exceptions\PlanException;
 use App\Models\Plan;
 
 class PlanService

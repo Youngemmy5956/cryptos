@@ -25,6 +25,7 @@
                     <table class="table align-middle table-nowrap mb-0">
                         <thead class="table-light">
                             <tr>
+                                <th class="align-middle"></th>
                                 <th class="align-middle">User</th>
                                 <th class="align-middle">Plan</th>
                                 <th class="align-middle">Currency</th>
@@ -36,9 +37,16 @@
                                 <th class="align-middle">Actions</th>
                             </tr>
                         </thead>
-                        @foreach ($subscriptions as $subs)
+                        @if($subscriptions->isNotEmpty())
+                        <div class="mb-2">
+                            <label>Select all</label>
+                            <input type="checkbox" class="" id="select-all">
+                        </div>
+                        <button style="margin-bottom: 10px" class="btn btn-primary mr-1 delete_all" data-url="{{ url('admin/subscriptions-delete') }}">Delete All Selected</button>
                         <tbody>
+                        @foreach ($subscriptions as $subs)
                             <tr>
+                                <td><input type="checkbox" class="sub_chk" data-id="{{$subs->id}}"></td>
                                 <td>{{$subs->user->names()}}</td>
                                 <td>{{$subs->plan->name}}</td>
                                 <td>{{$subs->currency->name}}</td>
@@ -53,13 +61,19 @@
                                         <a class="btn btn-success" href="{{ route('admin.subscriptions.edit',[$subs->id])}}">
                                             <i class="dripicons-document-edit"></i>
                                         </a>
-                                        <button type="submit" class="btn btn-danger"><i class="dripicons-trash"></i></button>
+                                        <button type="submit" class="btn btn-danger" data-tr="tr_{{$subs->id}}" data-toggle="confirmation" data-btn-ok-label="Delete" data-btn-ok-icon="fa fa-remove" data-btn-ok-class="btn btn-sm btn-danger" data-btn-cancel-label="Cancel" data-btn-cancel-icon="fa fa-chevron-circle-left" data-btn-cancel-class="btn btn-sm btn-default" data-title="Are you sure you want to delete ?" data-placement="left" data-singleton="true" class="btn btn-danger">
+                                            <i class="fas fa-trash-alt"></i></button>
                                     </form>
                                 </td>
                             </tr>
                         </tbody>
                         @endforeach
                     </table>
+                    @else
+                    <div class="mt-2 text-center col-12 alert alert-danger">
+                        <h5><i> No Subscribe users yet</i></h5>
+                    </div>
+                    @endif
                 </div>
                 <!-- end table-responsive -->
             </div>

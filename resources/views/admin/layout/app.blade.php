@@ -7,13 +7,16 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Skote - admin & Dashboard Template</title>
+    <title>{{$title ?? ""}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('admin/images/favicon.ico') }}">
-
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/toastr.css') }}" rel="stylesheet">
+    @toastr_css
     <!-- Bootstrap Css -->
     <link href="{{ asset('admin/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
@@ -61,9 +64,12 @@
     </div>
 
     <div class="rightbar-overlay"></div>
-
+    @jquery
+    @toastr_js
+    @toastr_render
     <!-- JAVASCRIPT -->
     @include('admin.layout.includes.scripts')
+    @yield("scripts")
 </body>
 
 </html>

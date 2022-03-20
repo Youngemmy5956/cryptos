@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\User;
 
 use App\Constants\NotificationConstants;
+use App\Constants\StatusConstants;
 use App\Exceptions\PlanException;
 use App\Exceptions\SubscriptionException;
 use App\Exceptions\Wallet\WalletException;
 use App\Http\Controllers\Controller;
 use App\Models\Plan;
+use App\Models\Subscription;
 use App\Services\Plan\SubscriptionService;
 use App\Services\Wallet\UserTransactionService;
 use App\Services\Wallet\WalletService;
@@ -18,8 +20,9 @@ use Illuminate\Validation\ValidationException;
 class SubscriptionController extends Controller
 {
     //
-    public function index(){
-        return view('user.dashboard.finance.subscription',[
+    public function index()
+    {
+        return view('user.dashboard.finance.subscription', [
             'plans' => Plan::get()
         ]);
     }
@@ -28,8 +31,8 @@ class SubscriptionController extends Controller
     {
         try {
             $user_id = auth()->id();
-                SubscriptionService::subscribeFromWallet($user_id, $id);
-        
+            SubscriptionService::subscribeFromWallet($user_id, $id);
+
             return redirect()->back()->with(NotificationConstants::SUCCESS_MSG, "Subscription completed successfully");
         } catch (ValidationException $e) {
             throw $e;
@@ -44,4 +47,5 @@ class SubscriptionController extends Controller
             return redirect()->back()->with(NotificationConstants::ERROR_MSG, "An error occured while processing your request.");
         }
     }
+   
 }

@@ -29,4 +29,10 @@ class UserTransaction extends Model
                 ->where('status',  StatusConstants::CANCELLED);
 
     }
+
+    public function scopeSearch($query , $value){
+        $query->whereRaw("CONCAT(description,' ', reference) LIKE ?", ["%$value%"])
+        ->orWhere("batch_no" , "like" , "%$value%");
+    }
+
 }

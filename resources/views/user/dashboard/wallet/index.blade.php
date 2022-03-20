@@ -1,4 +1,4 @@
-@extends('user.layout.app')
+@extends('user.layout.app', ['title' => 'My Wallet'])
 @section('content')
 @section('style')
 <style>
@@ -67,11 +67,11 @@
                     <div class="col-sm-6">
                         <div>
                             <div class="font-size-24 text-primary mb-2">
-                                <i class="bx bx-send"></i>
+                                <i class="fas fa-battery-full"></i>
                             </div>
 
                             <p class="text-muted mb-2">Paid On</p>
-                            <h5>NGN 654.42</h5>
+                            <h5>{{(optional($sub)->paid_on)}}</h5>
 
                             <!-- <div class="mt-3">
                                 <a href="javascript: void(0);" class="btn btn-primary btn-sm w-md">Send</a>
@@ -82,11 +82,11 @@
                     <div class="col-sm-6">
                         <div class="mt-4 mt-sm-0">
                             <div class="font-size-24 text-primary mb-2">
-                                <i class="bx bx-wallet"></i>
+                                <i class="fas fa-battery-empty"></i>
                             </div>
 
                             <p class="text-muted mb-2">Expires On</p>
-                            <h5>$ 824.34</h5>
+                            <h5>{{(optional($sub)->expires_at)}}</h5>
 
                             <!-- <div class="mt-3">
                                 <a href="javascript: void(0);" class="btn btn-primary btn-sm w-md">Withdraw</a>

@@ -65,6 +65,14 @@ class SubscriptionService
     {
         DB::beginTransaction();
         try {
+            $user = auth()->user();
+            $sub = Subscription::where([
+                "user_id"=> $user->id,
+                "status" => StatusConstants::ACTIVE
+            ])->first();
+            if(!empty($sub->status ?? "" == StatusConstants::ACTIVE) ){
+                throw new SubscriptionException("You are currently on an active plan");
+            }else{
             $plan = PlanService::getById($plan_id);
             $subscription = self::subscribeToPlan($user_id, $plan->id, now());
             $amount = $subscription->price;
@@ -82,6 +90,7 @@ class SubscriptionService
                 "type" => TransactionConstants::DEBIT,
                 "status" => StatusConstants::COMPLETED
             ]);
+        }
             // UserSubscriptionService::signupBonus($user_id);
             // ReferralSubscriptionService::shareProfits($user_id, $currency_id, $amount);
             DB::commit();

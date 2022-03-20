@@ -42,8 +42,10 @@ class PaymentGatewayController extends Controller
                     ->with($processData["success"] ? NotificationConstants::SUCCESS_MSG :
                         NotificationConstants::ERROR_MSG, $processData["message"]);
             }
+            if ($request->status == "success") {
+                UserTransactionService::markAs($request->tx_ref, StatusConstants::PENDING);
+            }
         }
-
 
         return redirect()->route("wallets.index")
             ->with(NotificationConstants::SUCCESS_MSG, "Transaction completed successfully!");

@@ -65,7 +65,7 @@
                         <input id="confirm" type="password" class="form-control @error('confirm_password') is-invalid @enderror" name="confirm_password" value="" required autocomplete="confirm_password">
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-success" type="submit">Submit</button>
+                        <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
                 </form>
             </div>

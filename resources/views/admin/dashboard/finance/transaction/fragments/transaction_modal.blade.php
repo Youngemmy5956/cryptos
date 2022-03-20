@@ -10,8 +10,8 @@
 
                     <p>
                         <b>User: </b>
-                        <a href="{{ route("admin.users.index" , ["username" => $transaction->user->username])}}">
-                            {{ $transaction->user->names() }}
+                        <a href="">
+                            {{ (optional($transaction->user)->names()) }}
                         </a>
                     </p>
                     <p>

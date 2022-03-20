@@ -18,5 +18,8 @@
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1",
         "webpack-cli": "^4.9.2"
+    },
+    "dependencies": {
+        "toastr": "^2.1.4"
     }
 }

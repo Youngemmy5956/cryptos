@@ -132,6 +132,16 @@ class SubscriptionController extends Controller
         $sub = Subscription::where('id', $id)->findOrFail($id);
         $sub->destroy($id);
         session()->flash(NotificationConstants::ERROR_MSG, 'Sub removed successfully');
+        toastr()->error("Subscription has been removed");
         return redirect()->route('admin.subscriptions.index');
+    }
+
+    public function deleteAll(Request $request)
+    {
+        $ids = $request->ids;
+        Subscription::whereIn('id',explode(",",$ids))->delete();
+        toastr()->error("Transactions has been deleted");
+        return response()->json(['success'=>"Are you sure you want to delete this transaction."]);
+
     }
 }

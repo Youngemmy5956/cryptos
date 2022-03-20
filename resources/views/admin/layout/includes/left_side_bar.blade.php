@@ -23,31 +23,31 @@
                 </li> -->
                 <li>
                     <a href="{{route('admin.currencies.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fas fa-comment-dollar"></i>
                         <span key="t-dashboards">Currencies</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.subscriptions.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fas fa-hourglass-start"></i>
                         <span key="t-dashboards">Subscriptions</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.plans.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fas fa-praying-hands"></i>
                         <span key="t-dashboards">Available Plans</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.users.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fas fa-user-friends"></i>
                         <span key="t-dashboards">Users</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.transactions.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fab fa-cc-mastercard"></i>
                         <span key="t-dashboards">Users Transactions</span>
                     </a>
                 </li>

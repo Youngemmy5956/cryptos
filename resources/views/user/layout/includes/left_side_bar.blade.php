@@ -17,25 +17,25 @@
                 <li class="menu-title" key="t-apps">Apps</li>
                 <li>
                     <a href="{{route('user.myaccount.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fas fa-address-book"></i>
                         <span key="t-dashboards">My Account</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('user.transactions.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fab fa-cc-mastercard"></i>
                         <span key="t-dashboards">My Transactions</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('user.subscriptions.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fas fa-won-sign"></i>
                         <span key="t-dashboards">Subscribe</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('user.wallets.index')}}" class="waves-effect">
-                        <i class="dripicons-map"></i>
+                        <i class="fas fa-wallet"></i>
                         <span key="t-dashboards">My Wallet</span>
                     </a>
                 </li>

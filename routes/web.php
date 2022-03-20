@@ -105,10 +105,12 @@ Route::as("admin.")->prefix("admin")->middleware(["role:Admin|Sudo", "auth"])->g
 
     Route::resource('/users', UsersController::class);
     Route::get('users/imitate/{id}', [UsersController::class, "imitate"])->name("users.imitate");
+    Route::delete('transactions-delete', [TransactionController::class, "deleteAll"])->name("transactions.delete-all");
     Route::resource('transactions', TransactionController::class)->only("index", "destroy");
     Route::post('transaction/status/{id}/change_-status', [TransactionController::class, "status"])->name("transactions.change_status");
     Route::resource('plans', PlanController::class);
     Route::resource('currencies', CurrenciesController::class);
+    Route::delete('subscriptions-delete', [SubscriptionController::class, "deleteAll"])->name("subscriptions.delete");
     Route::resource('subscriptions', SubscriptionController::class);
 
     // Route::resource('/faqs', FaqController::class);

@@ -22,7 +22,7 @@ class TransactionController extends Controller
     {
         //
         // $builder = UserTransaction::test();
-        $transactions = UserTransaction::paginate(30);
+        $transactions = UserTransaction::latest()->paginate(30);
         return view('admin.dashboard.finance.transaction.index',[
             'transactions' =>$transactions,
             'statuses' => StatusConstants::TRANSACTION_OPTIONS
@@ -93,8 +93,22 @@ class TransactionController extends Controller
     public function destroy($id)
     {
         //
+        $transaction = UserTransaction::where("id", $id)->findOrFail($id);
+        $transaction->destroy($id);
+        session()->flash("error_message", "Transaction has been deleted");
+        toastr()->error("Transaction has been deleted");
+
+        return back();
     }
 
+    public function deleteAll(Request $request)
+    {
+        $ids = $request->ids;
+        UserTransaction::whereIn('id',explode(",",$ids))->delete();
+        toastr()->error("Transactions has been deleted");
+        return response()->json(['success'=>"Are you sure you want to delete this transaction."]);
+
+    }
     //
     public function status(Request $request)
     {
