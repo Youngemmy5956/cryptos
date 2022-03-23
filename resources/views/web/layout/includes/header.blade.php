@@ -52,8 +52,8 @@
         <a style="text-decoration:none" href="{{route('login')}}" class="login-button">login</a>
         <a style="text-decoration:none" href="{{route('register')}}" class="login-button">Register</a>
         @else
-        <a style="text-decoration:none" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="login-button">logout</a>
-
+        <a style="text-decoration:none" class="login-button" href="{{route('user.home')}}">Dashboard</a>
+        <!-- <a style="text-decoration:none" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="login-button">logout</a> -->
         @endif
     </div>
 

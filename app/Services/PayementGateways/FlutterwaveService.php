@@ -70,6 +70,7 @@ class FlutterwaveService
     {
         $this->customer_data = $value;
         return $this;
+
     }
     public function setMetaData(array $value)
     {
@@ -90,7 +91,6 @@ class FlutterwaveService
             "customer" => $this->customer_data,
             "customizations" => $this->customization
         ];
-
         if(empty($data["customer"])){
             throw new FlutterwaveException("Customer data is required");
         }
@@ -100,6 +100,7 @@ class FlutterwaveService
         }
 
         $curl = curl_init();
+
         curl_setopt_array($curl, array(
             CURLOPT_URL => "https://api.flutterwave.com/v3/payments",
             CURLOPT_RETURNTRANSFER => true,

@@ -80,7 +80,6 @@ class FundWalletController extends Controller
 
     public function cardProcess(Request $request)
     {
-// dd($request->all());
         try {
             $data = $request->validate([
                 "gateway" => "required|" . Rule::in([CurrencyConstants::FLUTTERWAVE]),

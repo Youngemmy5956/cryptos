@@ -24,26 +24,30 @@ class PaymentGatewayController extends Controller
     }
     public function handleFlutterwaveCallback(Request $request)
     {
+        // dd($request->all());
         $flutterwaveService = new FlutterwaveService;
-
         if ($request->status == "cancelled") {
             UserTransactionService::markAs($request->tx_ref, StatusConstants::CANCELLED);
             return redirect()->route("user.wallets.index")
                 ->with(NotificationConstants::ERROR_MSG, "Transaction cancelled!");
         }
 
+        if ($request->status == "successful") {
+            UserTransactionService::markAs($request->tx_ref, StatusConstants::PENDING);
+            return redirect()->route("user.wallets.index")
+                ->with(NotificationConstants::SUCCESS_MSG, "Transaction Successful! Wallet will be creditted in few minutes");
+        }
+
         $response = $flutterwaveService->verify($request->transaction_id);
         $data = $response["data"];
         if ($response["status"] == "success") {
+            UserTransactionService::markAs($request->tx_ref, StatusConstants::PENDING);
             $transaction = UserTransactionService::getByReference($data["tx_ref"]);
             if ($transaction->activity == TransactionActivityConstants::FUND_WITH_FLUTTERWAVE) {
                 $processData = WalletFundWalletService::processGatewayCallback($transaction);
                 return redirect($processData["link"])
                     ->with($processData["success"] ? NotificationConstants::SUCCESS_MSG :
                         NotificationConstants::ERROR_MSG, $processData["message"]);
-            }
-            if ($request->status == "success") {
-                UserTransactionService::markAs($request->tx_ref, StatusConstants::PENDING);
             }
         }
 

@@ -21,10 +21,12 @@
     <!-- App Css-->
     <link href="{{ asset('user/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
     @yield('style')
+
     <style>
         .plan {
             text-align: right;
         }
+      
     </style>
 
 </head>
