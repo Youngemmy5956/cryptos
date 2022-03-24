@@ -42,7 +42,6 @@ class FundWalletService
         try {
             $callbackUrl = route("auth.payment.callback", ["gateway" => CurrencyConstants::FLUTTERWAVE]);
             $flutterwaveService = new FlutterwaveService;
-            // dd($flutterwaveService);
 
             $currency = CurrencyService::getByType($currency_type);
 
@@ -55,6 +54,7 @@ class FundWalletService
                 "batch_no" => null,
                 "status" => StatusConstants::PENDING
             ]);
+
 
             $initializeData = $flutterwaveService
                 ->setCustomization(null, "Fund with Card")

@@ -51,7 +51,7 @@
                         <div class="text-sm-end mt-4 mt-sm-0">
                             <p class="text-muted mb-2">Available Dollar <br>Balance</p>
                             <h5>+ $ 248.35 <span class="badge bg-success ms-1 align-bottom"></span></h5>
-
+    
                         </div>
                     </div> -->
 

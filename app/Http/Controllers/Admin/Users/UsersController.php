@@ -6,6 +6,7 @@ use App\Constants\NotificationConstants;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
 {
@@ -99,5 +100,13 @@ class UsersController extends Controller
         $user->destroy();
         session()->flash(NotificationConstants::ERROR_MSG, 'User has been removed');
         return back();
+    }
+
+    public function imitate($id){
+        if (!isSudo()) {
+            return back();
+        }
+        Auth::loginUsingId($id);
+        return redirect()->route("user.home");
     }
 }

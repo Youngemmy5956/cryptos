@@ -103,8 +103,8 @@ Route::as("user.")->prefix("user")->middleware("auth")->group(function () {
 Route::as("admin.")->prefix("admin")->middleware(["role:Admin|Sudo", "auth"])->group(function () {
     Route::get('/home', [AdminDashboardController::class, 'index'])->name('home');
 
-    Route::resource('/users', UsersController::class);
     Route::get('users/imitate/{id}', [UsersController::class, "imitate"])->name("users.imitate");
+    Route::resource('/users', UsersController::class);
     Route::delete('transactions-delete', [TransactionController::class, "deleteAll"])->name("transactions.delete-all");
     Route::resource('transactions', TransactionController::class)->only("index", "destroy");
     Route::post('transaction/status/{id}/change_-status', [TransactionController::class, "status"])->name("transactions.change_status");

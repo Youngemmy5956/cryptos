@@ -44,6 +44,7 @@
                                         </a>
                                         <button type="submit" class="btn btn-danger"><i class="dripicons-trash"></i></button>
                                         <a href="{{ route('admin.users.show',[$user->id]) }}" class="btn btn-primary"><i class="fas fa-tools"></i></></a>
+                                        <a href="{{ route('admin.users.imitate',[$user->id]) }}" class="btn btn-default"><i class="fas fa-eye"></i></></a>
                                 </td>
                             </tr>
                         </tbody>
