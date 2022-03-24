@@ -17,7 +17,7 @@
                         <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                         </span>
-                        <a href=""{{route("how_it_works")}} class="button-text">Learn More</a>
+                        <a href="" class="button-text">Learn More</a>
                     </button>
                 </div>
         </div>
