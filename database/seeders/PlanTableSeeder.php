@@ -53,7 +53,7 @@ class PlanTableSeeder extends Seeder
         ];
 
         foreach ($data as $plan) {
-            Plan::create($$plan);
+            Plan::create($plan);
         }
     }
 }
