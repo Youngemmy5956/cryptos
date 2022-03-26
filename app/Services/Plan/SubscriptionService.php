@@ -67,30 +67,30 @@ class SubscriptionService
         try {
             $user = auth()->user();
             $sub = Subscription::where([
-                "user_id"=> $user->id,
+                "user_id" => $user->id,
                 "status" => StatusConstants::ACTIVE
             ])->first();
-            if(!empty($sub->status ?? "" == StatusConstants::ACTIVE) ){
+            if (!empty($sub->status ?? "" == StatusConstants::ACTIVE)) {
                 throw new SubscriptionException("You are currently on an active plan");
-            }else{
-            $plan = PlanService::getById($plan_id);
-            $subscription = self::subscribeToPlan($user_id, $plan->id, now());
-            $amount = $subscription->price;
-            $currency_id = $plan->currency_id;
-            $wallet = WalletService::getByCurrencyId($user_id, $currency_id);
-            WalletService::debit($wallet, $amount);
-            UserTransactionService::create([
-                "user_id" => $wallet->user_id,
-                "currency_id" => $wallet->currency_id,
-                "amount" => $amount,
-                "fees" => 0,
-                "description" => "Subscribed to $plan->name plan",
-                "activity" => TransactionActivityConstants::SUBSCRIBE_TO_NETWORK_PLAN,
-                "batch_no" => null,
-                "type" => TransactionConstants::DEBIT,
-                "status" => StatusConstants::COMPLETED
-            ]);
-        }
+            } else {
+                $plan = PlanService::getById($plan_id);
+                $subscription = self::subscribeToPlan($user_id, $plan->id, now());
+                $amount = $subscription->price;
+                $currency_id = $plan->currency_id;
+                $wallet = WalletService::getByCurrencyId($user_id, $currency_id);
+                WalletService::debit($wallet, $amount);
+                UserTransactionService::create([
+                    "user_id" => $wallet->user_id,
+                    "currency_id" => $wallet->currency_id,
+                    "amount" => $amount,
+                    "fees" => 0,
+                    "description" => "Subscribed to $plan->name plan",
+                    "activity" => TransactionActivityConstants::SUBSCRIBE_TO_NETWORK_PLAN,
+                    "batch_no" => null,
+                    "type" => TransactionConstants::DEBIT,
+                    "status" => StatusConstants::COMPLETED
+                ]);
+            }
             // UserSubscriptionService::signupBonus($user_id);
             // ReferralSubscriptionService::shareProfits($user_id, $currency_id, $amount);
             DB::commit();

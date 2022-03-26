@@ -51,13 +51,12 @@ class PlanController extends Controller
             'price' => 'required|string',
             'duration' => 'nullable|string',
             'status' => 'required|string',
-
         ]);
     }
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request   
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)

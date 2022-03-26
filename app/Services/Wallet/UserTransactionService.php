@@ -29,13 +29,11 @@ class UserTransactionService
                 // StatusConstants::DECLINED
             ]),
         ]);
-
         if ($validator->fails()) {
             throw new ValidationException($validator);
         }
         return $validator->validated();
     }
-
     public static function create($data): UserTransaction
     {
         $data = self::validate($data);

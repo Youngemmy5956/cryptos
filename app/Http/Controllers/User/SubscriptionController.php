@@ -27,6 +27,7 @@ class SubscriptionController extends Controller
         ]);
     }
 
+        
     public function subscribe($id)
     {
         try {
@@ -47,5 +48,5 @@ class SubscriptionController extends Controller
             return redirect()->back()->with(NotificationConstants::ERROR_MSG, "An error occured while processing your request.");
         }
     }
-   
+
 }

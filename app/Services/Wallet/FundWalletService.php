@@ -51,7 +51,7 @@ class FundWalletService
                 "amount" => $amount,
                 "description" => "Fund via Flutterwave",
                 "activity" => TransactionActivityConstants::FUND_WITH_FLUTTERWAVE,
-                "batch_no" => null,
+                "batch_no" => null, 
                 "status" => StatusConstants::PENDING
             ]);
 
