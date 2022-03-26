@@ -118,7 +118,7 @@
     </div>
 </div>
 <!-- footer section -->
-<footer>
+{{-- <footer>
     <!-- first division -->
     <div class="foot1">
         <h2>useful links</h2>
@@ -151,7 +151,7 @@
         </p>
         <input type="email" name="" id="" placeholder="enter your email" class="input">
     </div>
-</footer>
+</footer> --}}
 <script src="{{asset('data/js/main.js')}}"></script>
 </body>
 </html>

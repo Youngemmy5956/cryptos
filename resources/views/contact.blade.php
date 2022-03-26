@@ -102,15 +102,15 @@
 
     </section>
     <!-- this is the social media tab  -->
-    <div class="social-handle">
+    {{-- <div class="social-handle">
         <img src="{{asset('data/images/facebook.png')}}" alt="" class="social-icon">
         <img src="{{asset('data/images/insta.png')}}" alt="" class="social-icon">
         <img src="{{asset('data/images/whatsapp.png')}}" alt="" class="social-icon">
         <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon">
         <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="social-icon">
-    </div>
+    </div> --}}
     <!-- footer section -->
-    <footer>
+    {{-- <footer>
         <!-- first division -->
         <div class="foot1">
             <h2>useful links</h2>
@@ -143,7 +143,7 @@
             </p>
             <input type="email" name="" id="" placeholder="enter your email" class="input">
         </div>
-    </footer>
+    </footer> --}}
     <script src="{{asset('data/js/main.js')}}"></script>
 </body>
 </html>

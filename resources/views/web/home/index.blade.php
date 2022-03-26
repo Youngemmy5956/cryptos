@@ -35,24 +35,24 @@
     <!-- end of section  -->
 
     <!-- this is the blog part of the homepage  -->
-    <h1 class="blog-header">latest from blog <br><span class="line"></span></h1>
+    {{-- <h1 class="blog-header">latest from blog <br><span class="line"></span></h1> --}}
 
     <!-- end of blog section  -->
     <!-- this is the register section  -->
-    <section class="register-section">
+    {{-- <section class="register-section">
         <img src="{{asset('data/images/20945517.jpg"')}}" alt="" class="svg-img">
         <div class="register-text">
             <p>register today to receive updates and be part of us</p>
-        </div>
+        </div> --}}
         <!-- this is the start now button  -->
-        <div class="start-now-btn">
+        {{-- <div class="start-now-btn">
             <button class="cta">
                 <span class="hover-underline-animation"> start now </span>
                 <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                     <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
                 </svg>
             </button>
-        </div>
+        </div> --}}
 
         <div class="coin-container"></div>
     </section>
