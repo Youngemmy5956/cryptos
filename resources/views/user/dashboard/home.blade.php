@@ -6,9 +6,10 @@
         color: red;
     }
 
-    .carous {
-        width: 100% !important;
-        height: 50% !important;
+    .images {
+        height: 323px;
+        width: 612px;
+
     }
 </style>
 @endsection
@@ -32,10 +33,17 @@
     </div>
 </div>
 <div class="row mt-2">
-    <div class="col-sm-6">
+    <div class="col-sm-12">
         <div class="card">
-
+            <img src="{{asset('user/images/custom/welcom.jpg')}}" class="img-fluid">
         </div>
     </div>
+    <!-- <div class="col-sm-6">
+        <div class="card">
+            <div class="images">
+                <img src="{{asset('user/images/custom/cryptohands.jpg')}}" class="">
+            </div>
+        </div>
+    </div> -->
 </div>
 @endsection
