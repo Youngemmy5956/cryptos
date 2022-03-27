@@ -23,19 +23,19 @@
             <ul class="navlist">
                 <li class="tab">
                     <!-- these are the navbar links to different pages -->
-                    <a href="{{route("index")}}" class="link">home</a>
+                    <a href="" class="link">home</a>
                 </li>
                 <li class="tab">
-                    <a href="{{route("how_it_works")}}" class="link">how it works</a>
+                    <a href="" class="link">how it works</a>
                 </li>
                 <li class="tab">
-                    <a href="{{route("blog")}}" class="link">blog</a>
+                    <a href="" class="link">blog</a>
                 </li>
                 <li class="tab">
-                    <a href="{{route("about")}}" class="link">about</a>
+                    <a href="" class="link">about</a>
                 </li>
                 <li class="tab">
-                    <a href="{{route("contact")}}" class="link">contact</a>
+                    <a href="" class="link">contact</a>
                 </li>
             </ul>
         </nav>
@@ -47,11 +47,11 @@
                  <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
          <ul class="list-items">
-            <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
-             <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
-              <li><a href="{{route("blog")}}">blog  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
-             <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
-             <li><a href="{{route("how_it_works")}}">how it works  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+            <li><a href="">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
+             <li><a href="">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+              <li><a href="">blog  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+             <li><a href="">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+             <li><a href="">how it works  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
          </ul>
         </div>
         <!-- this is the code for the hamburger menu in the mobile view -->

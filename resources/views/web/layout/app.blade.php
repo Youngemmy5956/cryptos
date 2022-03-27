@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="{{asset('data/css/style.css')}}"
     <link rel="icon" href="{{asset('data/images/coininvest.png')}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('data/css/general.css')}}">
+    <link rel="stylesheet" href="{{asset('data/css/about.css')}}">
+    <link rel="icon" href="{{asset('data/images/coininvest.png')}}">
     <title>coinvestcryptos.com</title>
 </head>
 

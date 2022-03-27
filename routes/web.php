@@ -26,7 +26,9 @@ use App\Http\Controllers\Dashboard\Ad\AdController;
 use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\Payment\FundWalletController;
 use App\Http\Controllers\User\UserController as UserAccountController;
+use App\Http\Controllers\Web\AboutUsController;
 use App\Http\Controllers\Web\Plan\PlanController as PlanPlanController;
+use App\Http\Controllers\Web\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,9 +45,27 @@ use App\Http\Controllers\Web\Plan\PlanController as PlanPlanController;
 
 Route::as("web.")->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('about-us', [AboutUsController::class, 'about'])->name('about');
+    Route::get('contact-us', [ContactController::class, 'contact'])->name('contact');
+    Route::post('contact-us', [ContactController::class, 'store'])->name('store');
     Route::resource('plans', PlanPlanController::class)->only('show');
     Route::get('/read-file/{path}', [HomeController::class, "readFile"])->name("read_file");
     // Route::get('/ref-invite/{ref_code}', [RegisterController::class, "ref_invite"])->name("ref_invite");
+});
+Route::get("mail", function () {
+    // set_time_limit(0);
+    // ContestService::notifyUsers();
+    // AppMailerJob::dispatchSync([
+    //         "data" => [
+    //             "user" => new User,
+    //             "provider_name" => null,
+    //             "referred_by_provider" => false,
+    //             "password" => null
+    //         ],
+    //         "to" => "lynkasofficial@gmail.com",
+    //         "template" => "emails.user.welcome",
+    //         "subject" => "Welcome to ZingHunt",
+    //     ]);
 });
 Auth::routes();
 

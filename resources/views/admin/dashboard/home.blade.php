@@ -48,7 +48,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="text-center">
-                <a href="{{route("admin.subscriptions.index")}}">
+                <a href="{{route("admin.transactions.index")}}">
                     <div class="">
                         <i class="fas fa-money-bill-wave"></i>
                     </div>

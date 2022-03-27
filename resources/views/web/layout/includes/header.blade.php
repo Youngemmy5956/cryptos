@@ -1,7 +1,7 @@
 <header class="">
     <!-- this is the logo container -->
     <div class="logo-container">
-    <a href="{{ url('/') }}"><img src="{{asset('data/images/coininvest22.png')}}" alt="" class="logo"></a>
+        <a href="{{ url('/') }}"><img src="{{asset('data/images/coininvest22.png')}}" alt="" class="logo"></a>
     </div>
 
     <!-- this is the navigation bar  for the destop view -->
@@ -9,7 +9,7 @@
         <ul class="navlist">
             <li class="tab">
                 <!-- these are the navbar links to different pages -->
-                <a href="" class="link">home</a>
+                <a href="{{route("web.home")}}" class="link">home</a>
             </li>
             <li class="tab">
                 <a href="#service" class="link">services</a>
@@ -18,10 +18,10 @@
                 <a href="" class="link">blog</a>
             </li>
             <li class="tab">
-                <a href="" class="link">about</a>
+                <a href="{{route("web.about")}}" class="link">about</a>
             </li>
             <li class="tab">
-                <a href="" class="link">contact</a>
+                <a href="{{route("web.contact")}}" class="link">contact</a>
             </li>
         </ul>
     </nav>
@@ -52,7 +52,7 @@
         <a style="text-decoration:none" href="{{route('login')}}" class="login-button">login</a>
         <a style="text-decoration:none" href="{{route('register')}}" class="login-button">Register</a>
         @else
-        <a style="text-decoration:none" class="login-button" href="{{route('user.home')}}">Dashboard</a>
+        <a class="btn btn-xl btn-light" href="{{route('user.home')}}"><b>Access Dashboard</b></a>
         <!-- <a style="text-decoration:none" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="login-button">logout</a> -->
         @endif
     </div>
