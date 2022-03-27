@@ -13,7 +13,7 @@
 <div class="row mx-auto mb-5 mt-5">
     @foreach($plans as $plan)
     <div class="col-sm-4">
-        <div class="card">
+        <div class="card mb-3">
             <div class="col-md-4 mx-auto mt-2">
                 <img class="card-img avatar-lg" src="{{ $plan->logoUrl() }}" alt="Card image">
             </div>

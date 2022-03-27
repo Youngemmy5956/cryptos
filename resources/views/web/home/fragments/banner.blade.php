@@ -1,4 +1,4 @@
-<section class="landpage">
+<section class="landpage mb-3">
     <!-- the main contains the landpage welcome text and image  -->
     <div class="main">
         <!-- this is the welcome text area -->

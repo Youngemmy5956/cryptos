@@ -37,11 +37,22 @@
             <img src="{{asset('data/images/1193.png')}}" alt="" id="close-sidebar" class="close-btn">
         </div>
         <ul class="list-items">
+            @if (auth()->check())
+            <li><a href="{{route('user.home')}}"> Access Dashboard<img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+            @endif 
             <li><a href="">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a></li>
             <li><a href="">contact <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
             <li><a href="">blog <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
             <li><a href="">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
             <li><a href="">how it works <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+            @if (Auth::guest())
+            <li><a href="{{route('login')}}">Login <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+            @else
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf 
+            <li><button type="submit" href="">Logout <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></button></li>
+            </form>
+            @endif
         </ul>
     </div>
     <!-- this is the code for the hamburger menu in the mobile view -->

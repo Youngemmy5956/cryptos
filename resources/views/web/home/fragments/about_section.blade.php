@@ -8,7 +8,7 @@
             Totam consectetur at delectus explicabo aliquam incidunt, et ad!
         </p>
         <!-- this is the start now button  -->
-        <a href="" class="start-btn">start now</a>
+        <a href="{{route("register")}}" class="start-btn">start now</a>
 
         <!-- this contains a text and pictorial guide on how to get started  -->
         <div class="process-icon-container">

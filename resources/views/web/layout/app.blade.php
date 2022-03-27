@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="{{asset('data/css/about.css')}}">
     <link rel="icon" href="{{asset('data/images/coininvest.png')}}">
     <title>coinvestcryptos.com</title>
+    <style>
+        .choose{
+           justify-items: center;
+        }
+
+        .text{
+            float: left;
+        }
+    </style>
 </head>
 
 <body>

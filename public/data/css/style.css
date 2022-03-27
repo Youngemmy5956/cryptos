@@ -1146,21 +1146,16 @@ header{
     overflow-y: hidden;
 }
     .menu-container{
-        width: 60px;
-        height: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         cursor: pointer;
-        margin: 20px;
+        float: right;
+        padding: 40px 20px;
     }
     .menu-line{
-        height: 4px;
-        width: 35px;
-        border-radius: 5px;
-        background-color: white;
-        margin: 3px;
+        background: white;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
     }
     .navbar{
         width: 0%;
@@ -1294,13 +1289,14 @@ header{
     .why-choose-us{
         height: auto;
     }
-    .why-text-container{
+    /* .why-text-container{
         flex-direction: column;
-    }
-    .why-text-container h1{
+    } */
+    /* .why-text-container h1{
         font-size: 2rem;
-        width: 80%;
-    }
+        width: 30%;
+        text-align: center;
+    } */
     .reason-card-container{
         flex-wrap: wrap;
         align-items: center;

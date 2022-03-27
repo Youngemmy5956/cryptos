@@ -34,9 +34,13 @@
                         </div>
                         <div class="col-sm-6">
                         </div>
-                        <div class="text-center mt-3">
+                        <div class="text-center mt-3 mr-2">
                             <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
-                        </div </form>
+                            <div class="mt-2">
+                            <a class="ml-3" href="{{ route('password.request') }}"><b>Forgot Password?</b></a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
