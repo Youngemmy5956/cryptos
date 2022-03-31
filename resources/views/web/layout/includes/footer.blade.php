@@ -19,9 +19,9 @@
         <div class="social-media-handle">
             <img src="{{asset('data/images/facebook.png')}}" alt="" class="social-icon">
             <img src="{{asset('data/images/insta.png')}}" alt="" class="social-icon">
-            <img src="{{asset('data/images/whatsapp.png')}}" alt="" class="social-icon">
-            <img src="{{asset('data/images/git.png')}}" alt="" class="social-icon">
             <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon">
+            {{-- <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon">
+            <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon"> --}}
         </div>
     </div>
     <!-- second division  -->
@@ -33,12 +33,12 @@
     </div>
     <!-- 3rd division  -->
 
-    <div class="foot1">
+    {{-- <div class="foot1">
         <p>
         <h2>newsletter</h2>
         <p> Consequuntur neque excepturi debitis hic quasi labore amet
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, deserunt.
         </p>
         <input type="email" name="" id="" placeholder="enter your email" class="input">
-    </div>
-</footer>  
+    </div> --}}
+</footer>
