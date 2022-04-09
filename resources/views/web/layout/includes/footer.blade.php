@@ -4,22 +4,22 @@
         <h2>useful links</h2>
         <ul class="foot-list">
             <li>
-                <a href="#">home</a>
+                <a href="">home </a>
             </li>
             <li>
-                <a href="#">about</a>
+                <a href="/about-us">about</a>
             </li>
             <li>
-                <a href="#">blog</a>
+                <a href="/#service">services</a>
             </li>
             <li>
-                <a href="#">contact</a>
+                <a href="/contact-us">contact</a>
             </li>
         </ul>
         <div class="social-media-handle">
-            <img src="{{asset('data/images/facebook.png')}}" alt="" class="social-icon">
-            <img src="{{asset('data/images/insta.png')}}" alt="" class="social-icon">
-            <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon">
+            <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> </a></li>
+            <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> </a></li>
+            <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> </a></li>
             {{-- <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon">
             <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon"> --}}
         </div>
@@ -27,10 +27,11 @@
     <!-- second division  -->
     <div class="foot1">
         <h2>contact me</h2>
-        <li><img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> <a href="#">@emmanula/twitter.com</a></li>
-        <li><img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> <a href="#">www.google.com</a></li>
-        <li><img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> <a href="#">+234 7042244539</a></li>
+          <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="social-icon"> </a> </li>
+          <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/insta.png')}}" alt="" class="social-icon"> </a> </li>
+          <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon"> </a> </li>
     </div>
+
     <!-- 3rd division  -->
 
     {{-- <div class="foot1">

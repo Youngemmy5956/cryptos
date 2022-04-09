@@ -3,7 +3,7 @@
     <div class="main">
         <!-- this is the welcome text area -->
         <div class="welcome-text">
-            <h1>experience smart and reliable crypto trading with <br><span class="green-text">coinvestcryptos</span> </h1>
+            <h1 style="color: white">experience smart and reliable crypto trading with <br><span class="green-text">coinvestcryptos</span> </h1>
             <p>
                 the home of produtive investments.we offer fast,reliable and secure
                 transaction of all kinds of cryptocurrencies

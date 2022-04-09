@@ -4,13 +4,13 @@
             <div class="col-sm-6">
                 <h1>Why Choose CoininvestCryptos</h1>
             </div>
-            <div class="col-sm-6 ">     
+            <div class="col-sm-6 ">
                 <img src="{{asset('data/images/5031659.jpg')}}" alt="" class="img-fluid">
             </div>
         </div>
     </div> -->
     <div class="">
-        
+
     </div>
     <div class="col-6 mx-auto">
         <h1 class="mb-3 mt-2">Why Choose us</h1>
@@ -26,16 +26,16 @@
             <div class="reason-card">
                 <img src="{{asset('data/images/shield.gif')}}" alt="" class="icon">
                 <h1>protection and security</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Facilis non minus repudiandae exercitationem fugit,
+                <p>PROTECTED BY INSURANCE <br>
+                    Cryptocurrency stored on our servers is covered by our insurance policy.
                 </p>
             </div>
             <!-- 2nd card  -->
             <div class="reason-card">
                 <img src="{{asset('data/images/social-media.gif')}}" alt="" class="icon">
                 <h1>licensed exchange</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Facilis non minus repudiandae exercitationem fugit,
+                <p>Our Expert Team <br>
+                    Meet Our Professional Team
 
                 </p>
             </div>

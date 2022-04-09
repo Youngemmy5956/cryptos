@@ -10,32 +10,30 @@
     </section>
     <section class="about-section">
         <h1>about <span class="green-text">coinvestcryptos</span></h1>
-        <p> coininvestcryptos is an online crypto trading platform, with fully secured, fast, reliable
-            and licenced trade record for past three decades. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+        <p> <b>coininvestcryptos is an online crypto and forex trading platform, with fully secured, fast, reliable
+            and licenced trade record for past three decades. <br> We initiated the crypto currency assets because of the skyrocketing rise in the cryptocurrency value and its effect in the financial market. Cryptocurrency market was valued at $500 billion USD at the end of 2017. It's value rose over 360% from the beginning of 2017. Crypto currencies are known for their rapid price movements, providing potentially high returns on investment.</b>
 
         </p>
     </section>
     <section class="our-vision-section">
-        <img src="{{asset('data/images/2164477.jpg')}}" alt="" class="vision-img">
+        <img src="{{asset('data/images/emmy.jpg')}}" alt="" class="vision-img">
 
         <div class="our-vision-text-container">
             <div class="">
                 <h1>our vision <br><span class="line"></span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tenetur veniam ea nemo dolore. Error harum voluptates minima. Ad, natus ab.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolorum
-                    nostrum architecto illum a earum?
+                <p><b>We believe that disruptive innovation deserves unbiased education and user-friendly investment products.  In collaboration with our investment manager partners, we work to bring Wall Street standards for research, risk management and transparency to digital asset investing.</b>
                 </p>
-            </div>  
+            </div>
         </div>
 
     </section>
     <section class="our-team-section">
         <div class="our-team-text">
             <h1>meet our team <br><span class="line"></span> </h1>
-            <p>meet the group of geniuses who has made, and kept this platform running smoothly.
+            <p><b>Our Expert Team
+                Meet Our Professional Team, that has kept this platform running smoothly.
                 kudos! to them
-            </p>
+            </p></b>
         </div>
 
         <div class="our-team-img">

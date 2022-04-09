@@ -2,10 +2,8 @@
         <h1>about coinvestcrypto
             <br><span class="line"></span>
         </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            dolorum laboriosam voluptates voluptate fugit maxime eum ex veniam
-            sint dolores quos illo aliquam, animi nulla iste placeat hic officiis tempore sapiente?
-            Totam consectetur at delectus explicabo aliquam incidunt, et ad!
+        <p><b>CRYPTO TRADING AND EXCHANGE</b> <br>
+            We involve in the financial market for trading of forex and exchanges of all digital and binary assets. We initiated the crypto currency assets because of the skyrocketing rise in the cryptocurrency value and its effect in the financial market. Cryptocurrency market was valued at $500 billion USD at the end of 2017. It's value rose over 360% from the beginning of 2017. Crypto currencies are known for their rapid price movements, providing potentially high returns on investment.
         </p>
         <!-- this is the start now button  -->
         <a href="{{route("register")}}" class="start-btn">start now</a>
