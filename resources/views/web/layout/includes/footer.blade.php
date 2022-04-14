@@ -17,9 +17,9 @@
             </li>
         </ul>
         <div class="social-media-handle">
-            <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> </a></li>
-            <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> </a></li>
-            <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> </a></li>
+            <li> <a href="https://t.me/mycryptofx1"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> </a></li>
+            <li> <a href="https://t.me/mycryptofx1"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="my-img"> </a></li>
+            <li> <a href="https://wa.me/+609-535-2631"> <img src="{{asset('data/images/whatsapp.png')}}" alt="" class="my-img"> </a></li>
             {{-- <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon">
             <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon"> --}}
         </div>
