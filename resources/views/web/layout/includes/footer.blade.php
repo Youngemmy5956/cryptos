@@ -26,7 +26,7 @@
     </div>
     <!-- second division  -->
     <div class="foot1">
-        <h2>contact me</h2>
+        <h2>contact us</h2>
           <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/paper-plane.png')}}" alt="" class="social-icon"> </a> </li>
           <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/insta.png')}}" alt="" class="social-icon"> </a> </li>
           <li> <a href="mailto:coinvestcryptos@gmail.com"> <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon"> </a> </li>

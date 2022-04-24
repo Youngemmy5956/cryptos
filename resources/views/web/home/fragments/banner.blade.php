@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="landpage-img-container">
-            <img src="{{asset('data/images/coininvest.png')}}" alt="" class="landpage-img">
+            {{-- <img src="{{asset('data/images/coininvest.png')}}" alt="" class="landpage-img"> --}}
         </div>
     </div>
     <!-- this the the login form 'its a modal' -->

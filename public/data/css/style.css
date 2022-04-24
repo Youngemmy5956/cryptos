@@ -3,9 +3,11 @@
     padding: 0%;
     box-sizing: border-box;
     margin: 0%;
+
+
 }
 body{
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -16,7 +18,7 @@ img{
 header{
     overflow-x: hidden;
     overflow-y: hidden;
-    background:linear-gradient(180deg, rgb(2, 2, 172) 20%, rgba(0, 0, 139, 0.842));
+    background:linear-gradient(180deg, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.842));
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,29 +63,23 @@ header{
 }
 .tab a{
     text-decoration: none;
-    font-family: varela round;
+    font-family: varela round,sans-serif;
     font-size: 1.2rem;
     text-transform: capitalize;
-    color: white;
+    color: black;
 }
 
 .landpage{
-    background:linear-gradient(180deg, rgb(2, 2, 172) 20%, rgba(0, 0, 139, 0.842),transparent ), url(../images/bg.jpg);
+    background: url(../images/coinvest.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-.landpage::after{
-    position: absolute;
-    top: 0;
-    background:rgb(0, 0, 153);
-    width: 100%;
-    height: 100%;
-    content: "";
-    mix-blend-mode: overlay;
 
-}
 .main{
     display: flex;
     align-items: center;
@@ -302,14 +298,14 @@ header{
     align-items: center;
     justify-content:center ;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     backdrop-filter: blur(10px);
     z-index: 100;
 }
 .welcome-text h1{
     color: white;
-    font-family: poppins;
+    font-family: poppins,sans-serif;
     font-size: 2rem;
     width: 80%;
     text-transform: capitalize;
@@ -338,7 +334,7 @@ header{
 .welcome-text p{
     color: white;
     font-size: 1.2rem;
-    font-family: roboto;
+    font-family: roboto,sans-serif;
     width: 80%;
     text-align: left;
     line-height: 25px;
@@ -354,7 +350,7 @@ header{
     align-items: center;
     margin: 5px;
     justify-content:center;
-    font-family: ubuntu;
+    font-family: ubuntu sans-serif;
     font-size: 1.2rem;
     text-transform: capitalize;
     z-index: 200;
@@ -362,7 +358,7 @@ header{
     font-weight: bold;
 }
 .landpage-img-container{
-    height: 70%;
+    height: 70vh;
     width: 50%;
     display: flex;
     align-items: center;
@@ -615,7 +611,6 @@ header{
 }
 .service-card-div{
     display: flex;
-    /* flex-wrap: wrap; */
     background-color: white;
     width: 100%;
 }
@@ -648,7 +643,6 @@ header{
     border-bottom: 4px solid rgb(180, 148, 8);
     width: auto;
     padding-bottom: 10px;
-    /* background-color: black; */
 }
 .overlay{
     background-color: rgba(1, 10, 51, 0.822);
@@ -683,7 +677,6 @@ header{
 .liveprice-table h1{
     font-family: poppins;
     font-size: 1.5rem;
-    /* border-bottom: 5px solid yellow; */
     margin-right: 50%;
     margin-bottom: 30px;
 }
@@ -700,8 +693,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(90deg,rgb(6, 6, 87) 40%,rgb(6, 6, 197) 80%);
-    /* background-image: url(../images/gradient-abstract-purple-background_23-2149120166.jpg); */
+    background: black;
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 40px;
@@ -1377,6 +1369,13 @@ header{
 }
 
 @media (min-width : 0px) and (max-width: 749px){
+    .logo-container{
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 0%;
+    }
 
     body{
         overflow-x: hidden;
@@ -1387,6 +1386,8 @@ header{
         height: auto;
         padding: 10px;
         flex-direction: column-reverse;
+        position: relative;
+        justify-content: flex-start;
     }
     .menu-container{
         width: 60px;
@@ -1397,6 +1398,10 @@ header{
         flex-direction: column;
         cursor: pointer;
         margin-left: auto;
+        transform: translate(y, -50%);
+        top: 20%;
+        position: absolute;
+        right: 10%;
     }
     .menu-line{
         height: 4px;
@@ -1544,22 +1549,38 @@ header{
         width: 60%;
     }
     .landpage{
-        height: auto;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .landpage-img-container{
-        height: 20vh;
+        display: none;
+       width: 0%;
     }
     .main{
         flex-direction: column-reverse;
         height: auto;
         margin: auto;
         padding-bottom: 40px;
+        width: 100%;
     }
-    .landpage-links{
-        display:none;
+    .main-container{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .btn-container{
-       display: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .welcome-text{
         width: 100%;

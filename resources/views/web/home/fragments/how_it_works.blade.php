@@ -1,7 +1,7 @@
 <section class="how-does-it-work-section" id="text">
         <!-- how it works image  -->
         <div class="how-it-works-img-container">
-            <img src="{{asset('data/images/IMG-20220214-WA0058.jpg')}}" alt="">
+            <img src="{{asset('data/images/manage-business-meetings.webp')}}" alt="">
         </div>
         <!-- this holds the text that explains how the platform works   -->
         <div class="how-it-works-text-container">

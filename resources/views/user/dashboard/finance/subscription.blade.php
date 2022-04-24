@@ -38,7 +38,7 @@
                     </form>
                     <div>
 
-                        <button data-bs-toggle="modal" data-bs-target="#showDetail_{{$plan->id}}" class="btn btn-primary btn-sm waves-effect waves-light">View Plan Details</button>
+                        <button data-bs-toggle="modal" data-bs-target="#showDetail_{{$plan->id}}" class="btn btn-primary btn-sm waves-effect waves-light">WALLET ADDRESS</button>
                     </div>
                 </div>
                 @include('user.dashboard.finance.fragments.show_plan_detail')

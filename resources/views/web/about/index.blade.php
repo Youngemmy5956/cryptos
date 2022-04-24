@@ -16,11 +16,11 @@
         </p>
     </section>
     <section class="our-vision-section">
-        <img src="{{asset('data/images/emmy.jpg')}}" alt="" class="vision-img">
+        <img src="{{asset('data/images/cv.jpeg')}}" alt="" class="vision-img">
 
         <div class="our-vision-text-container">
             <div class="">
-                <h1>our vision <br><span class="line"></span></h1>
+                <h1>Support Head <br><span class="line"></span></h1>
                 <p><b>We believe that disruptive innovation deserves unbiased education and user-friendly investment products.  In collaboration with our investment manager partners, we work to bring Wall Street standards for research, risk management and transparency to digital asset investing.</b>
                 </p>
             </div>
@@ -29,7 +29,7 @@
     </section>
     <section class="our-team-section">
         <div class="our-team-text">
-            <h1>meet our team <br><span class="line"></span> </h1>
+            <h1>Marketing Director <br><span class="line"></span> </h1>
             <p><b>Our Expert Team
                 Meet Our Professional Team, that has kept this platform running smoothly.
                 kudos! to them
@@ -37,14 +37,14 @@
         </div>
 
         <div class="our-team-img">
-            <img src="{{asset('data/images/4776016.jpg')}}" alt="" class="our-img">
+            <img src="{{asset('data/images/bg.jpeg')}}" alt="" class="our-img">
         </div>
     </section>
     <div class="team-card-container">
         <div class="team-card">
-            <img src="{{asset('data/images/1000_F_261258321_GP0Q6btipSzYzOQYQCvM8xzbU78jebdk.jpg')}}" alt="" class="profile-img">
+            <img src="{{asset('data/images/dg.jpeg')}}" alt="" class="profile-img">
             <div class="team-card-text">
-                <h1>ceo</h1>
+                <h1>Assitant Managing Director</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, inventore
                     laudantium molestias ut quis aspernatur? Id voluptatum repellendus fugiat culpa!
                 </p>

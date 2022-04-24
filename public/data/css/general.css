@@ -15,7 +15,7 @@ img {
 
 
 header {
-    background: linear-gradient(180deg, rgb(2, 2, 172) 20%, rgba(0, 0, 139, 0.842) 70%);
+    background: (180deg, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.842) 70%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -402,7 +402,7 @@ footer {
     }
 
     .menu-line {
-        height: 4px;    
+        height: 4px;
         width: 35px;
         border-radius: 5px;
         background-color: white;

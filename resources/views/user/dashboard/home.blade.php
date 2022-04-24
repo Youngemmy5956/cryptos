@@ -35,7 +35,7 @@
 <div class="row mt-2">
     <div class="col-sm-12">
         <div class="card">
-            <img src="{{asset('user/images/custom/welcom.jpg')}}" class="img-fluid">
+            <img src="{{asset('user/images/custom/full.jpg')}}" class="img-fluid">
         </div>
     </div>
     <!-- <div class="col-sm-6">
@@ -44,6 +44,6 @@
                 <img src="{{asset('user/images/custom/cryptohands.jpg')}}" class="">
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
 @endsection

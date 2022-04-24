@@ -15,7 +15,7 @@
     <div class="col-6 mx-auto">
         <h1 class="mb-3 mt-2">Why Choose us</h1>
         <div class="mt-2 mb-3">
-            <img src="{{asset('data/images/5031659.jpg')}}" alt="" class="img-fluid">
+            <img src="{{asset('data/images/a.jfif')}}" alt="" class="img-fluid">
         </div>
     </div>
     <section class="why-choose-us">
